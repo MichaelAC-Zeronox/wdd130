@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage | WDD 130</title>
+</head>
+<body>
+    <header id="header"></header>
+    <main style="padding: 20px;">
+        <h1>Michael Chandler | WDD 130</h1>
+        <img src="images/profile.png" alt="Your Name's Profile Picture" width="200">
+        <p>
+            I enjoy programming, and my contributions have primarily been within the game/console modding and hacking communities. However, I also have experience with MVC and, more recently, Blazor. I aspire to become a full-stack developer and am open to working on any project. I'm excited to collaborate with all of you on WDD 130.
+        </p>
+    </main>
+    <footer id="footer"></footer>
+
+    <script>
+        // Load the header HTML content
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('#header').innerHTML = data;
+            });
+
+        // Load the footer HTML content
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('#footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
