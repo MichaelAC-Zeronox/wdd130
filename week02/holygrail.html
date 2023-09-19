@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail | WDD 130</title>
+</head>
+<body>
+    <header id="header"></header>
+    <main style="padding: 20px;">
+        <h1>A Holy Grail Layout Example</h1>
+        <nav>
+            <ul>
+                <li><a href="https://github.com/">Item 1</a></li>
+                <li><a href="https://www.youtube.com">Item 2</a></li>
+            </ul>
+        </nav>
+            <section>
+                <article>
+                    <h2>Article 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi praesentium quisquam omnis quia at, recusandae quidem velit aspernatur voluptates sequi.</p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h2>Article 2</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus repellat, quis repudiandae velit sequi, ipsum inventore dolorum eligendi iusto eum quaerat sit at obcaecati doloribus!</p>
+                </article>
+            </section>
+            <aside>
+                <img src="https://www.churchofjesuschrist.org/imgs/afe9eb9888bd6c7a011b33a41aac6e03fdc39282/full/320%2C/0/default" alt="Fresno Temple" width="256">
+            </aside>
+    </main>
+    <footer id="footer"></footer>
+
+    <script>
+        // Load the header HTML content
+        fetch('../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('#header').innerHTML = data;
+            });
+
+        // Load the footer HTML content
+        fetch('../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('#footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
