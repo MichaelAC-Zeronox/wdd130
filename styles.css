@@ -1,25 +1,24 @@
-
-header {
+#page-header {
     background-image: url('/wdd130/images/header.jpg');
     background-repeat: repeat;
 }
 
-nav {
+#page-header nav {
     text-align: center;
     padding: 20px;
 }
 
-.dropdown {
+#page-header .dropdown {
     position: relative;
     display: inline-block;
     padding: 0 20px;
 }
 
-.dropdown a {
+#page-header .dropdown a {
     text-decoration: none;
 }
 
-.dropdown .submenu {
+#page-header .dropdown .submenu {
     display: none;
     position: absolute;
     top: 100%;
@@ -28,15 +27,15 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.dropdown:hover .submenu {
+#page-header .dropdown:hover .submenu {
     display: block;
 }
 
-.dropdown .submenu a {
+#page-header .dropdown .submenu a {
     display: block;
     padding: 10px;
 }
 
-.dropdown .submenu a:hover {
+#page-header .dropdown .submenu a:hover {
     background-color: #f0f0f0;
 }
