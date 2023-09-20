@@ -1,13 +1,16 @@
+/* CSS rule for the page header */
 #page-header {
     background-image: url('/wdd130/images/header.jpg');
     background-repeat: repeat;
 }
 
+/* CSS rules for the navigation inside the page header */
 #page-header nav {
     text-align: center;
     padding: 20px;
 }
 
+/* CSS rules for the dropdown menu */
 #page-header .dropdown {
     position: relative;
     display: inline-block;
@@ -38,4 +41,41 @@
 
 #page-header .dropdown .submenu a:hover {
     background-color: #f0f0f0;
+}
+
+/* CSS rules for other elements */
+
+/* CSS rule for navigation anchor elements */
+#page-header nav a {
+    /* Your styles for nav anchor elements go here */
+}
+
+/* CSS rule for heading 1 */
+#page-header h1 {
+    /* Your styles for h1 go here */
+}
+
+/* CSS rule for images */
+#page-header img {
+    /* Your styles for images go here */
+}
+
+/* CSS rule for the aside element */
+#page-header aside {
+    /* Your styles for aside go here */
+}
+
+/* CSS rule for the aside image */
+#page-header aside img {
+    /* Your styles for aside image go here */
+}
+
+/* CSS rule for paragraphs */
+#page-header p {
+    /* Your styles for paragraphs go here */
+}
+
+/* CSS rule for the footer */
+#page-header footer {
+    /* Your styles for footer go here */
 }
