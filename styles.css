@@ -56,7 +56,9 @@ img {
 }
 
 aside {
-    /* Your styles for aside go here */
+    position: fixed;
+    width: 100%;
+    text-align: center;
 }
 
 aside img {
