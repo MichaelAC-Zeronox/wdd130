@@ -1,0 +1,84 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Font1&family=Font2&display=swap');
+
+:root {
+  --primary-color: #396e94;
+  --secondary-color: #e7c24f;
+  --accent1-color: #a43312;
+  --accent2-color: #381d2a;
+  --heading-font: 'Font1', sans-serif;
+  --paragraph-font: 'Font2', serif;
+  --nav-bg-color: var(--primary-color);
+  --nav-link-color: #ffffff;
+  --nav-hover-link-color: var(--secondary-color);
+  --nav-hover-bg-color: #333333;
+}
+
+body {
+  font-family: var(--paragraph-font);
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
+}
+
+header {
+  padding: 10px;
+  background-color: var(--nav-bg-color);
+  text-align: center;
+  color: var(--nav-link-color);
+}
+
+p {
+  padding: 10px;
+}
+
+nav {
+  background-color: var(--nav-bg-color);
+}
+
+nav a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-bg-color);
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  background-color: var(--nav-bg-color);
+  color: var(--nav-link-color);
+}
+
+.return-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .return-button:hover {
+    background-color: var(--accent1-color);
+  }
+
+  .color-preview {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    border: 1px solid #000;
+  }

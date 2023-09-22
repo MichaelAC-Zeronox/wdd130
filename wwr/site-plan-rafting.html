@@ -4,31 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>White Water Rafting | Siteplan | WDD 130</title>
+    <meta name="description" content="White Water Rafting website site plan">
+    <meta name="author" content="Michael Chandler">
+    <link rel="stylesheet" href="/wdd130/wwr/styles/styles.css">
 </head>
 <body>
-    <header id="header"></header>
-    <main style="padding: 20px;">
+    <header>
+        <a href="/wdd130/" class="return-button">Return to Home</a>
         <h1>White Water Rafting Siteplan</h1>
-        <p>
-            This site is under construction.
-        </p>
+        <div>Author: Michael Chandler</div>
+    </header>
+    <main style="padding: 20px;">
+        <h2>Overview</h2>
+        <h3>Purpose</h3>
+        <p>This site is under construction.</p>
+        <h3>Audience</h3>
+        <p>Our target audience includes adventure enthusiasts, thrill-seekers, and nature lovers who are looking for exciting white water rafting experiences.</p>
+        <h2>Branding</h2>
+        <h3>Website Logo</h3>
+        <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/logos/logo12_200.png" alt="Rafting Site Logo">
+        <h2>Style Guide</h2>
+        <h3>Color Palette</h3>
+        <p>Our color palette:</p>
+        <ul>
+            <li><strong>Primary Color:</strong> #396e94 <span class="color-preview" style="background-color: #396e94;"></span></li>
+            <li><strong>Secondary Color:</strong> #e7c24f <span class="color-preview" style="background-color: #e7c24f;"></span></li>
+            <li><strong>Accent1 Color:</strong> #a43312 <span class="color-preview" style="background-color: #a43312;"></span></li>
+            <li><strong>Accent2 Color:</strong> #381d2a <span class="color-preview" style="background-color: #381d2a;"></span></li>
+        </ul>
+        <h3>Typography</h3>
+        <p>For headings, we will use a sans-serif font called "Font1". For paragraphs, we will use a serif font called "Font2".</p>
+        <h4>Headings Example Font</h4>
+        <p>Font Family: Font1, Category: Sans-serif</p>
+        <h4>Normal Text/Paragraph Example Font</h4>
+        <p>Font Family: Font2, Category: Serif</p>
+        <h4>Colored Callout Example Font</h4>
+        <p>Font Family: Font1, Category: Sans-serif</p>
+        <h3>Navigation</h3>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Trips</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        <h2>Wireframes</h2>
+        <h3>Home Page Wireframe</h3>
+        <img src="https://byui-cse.github.io/wdd130-ww-course/images/wwr/wwr-wireframe-home.png" alt="Home Page Wireframe Example Design" width="700">
+        <h3>About Us Page Wireframe</h3>
+        <img src="https://byui-cse.github.io/wdd130-ww-course/images/wwr/wwr-wireframe-aboutus-update.png" alt="About Us Page Wireframe Design" width="700">
     </main>
-    <footer id="footer"></footer>
-
-    <script>
-        // Load the header HTML content
-        fetch('../header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.querySelector('#header').innerHTML = data;
-            });
-
-        // Load the footer HTML content
-        fetch('../footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.querySelector('#footer').innerHTML = data;
-            });
-    </script>
+    <footer>
+        <p>&#169; 2023 White Water Rafting. All Rights Reserved. | WDD 130 - Web Design and Development</p>
+    </footer>
 </body>
 </html>
