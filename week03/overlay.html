@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay | WDD 130</title>
+    <link rel="stylesheet" href="/wdd130/week03/styles/overlay.css">
+</head>
+<body>
+    <header id="header"></header>
+
+    <main>
+        <h2>CSS Layout: Position Absolute</h2>
+        <div class="herodiv">
+            <img src="https://media.ldscdn.org/images/media-library/animals/cat-892266-gallery.jpg" alt="Kitten placeholder image" width="850" height="300">
+            <section class="stats">
+                <h3>About Me</h3>
+                <p>Gender: <span id="gender">Female</span></p>
+                <p>Age: <span id="age">1</span></p>
+                <p>Shots?: <span id="shots">Yes</span></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        Footer Content in Fixed Position with bottom set at 0 pixels.
+    </footer>
+
+    <script>
+        // Load the header HTML content
+        fetch('../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('#header').innerHTML = data;
+            });
+
+        // Load the footer HTML content
+        fetch('../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
