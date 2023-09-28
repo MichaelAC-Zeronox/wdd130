@@ -33,7 +33,10 @@ p {
 }
 
 /* Class Selectors */
-.box {}
+.box {
+
+    padding-top: 30px;
+}
 
 main img {
     float: right;
