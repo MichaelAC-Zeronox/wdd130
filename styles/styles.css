@@ -42,6 +42,8 @@ footer {
     width: 100%;
     text-align: center;
     background-color: #f0f0f0; /* Optional background color */
+        margin-top: 1em;
+    border-top: 1px solid #ccc; /* Add a top border */
 }
 /* Class Selectors */
 .box {
@@ -56,3 +58,10 @@ main img {
 aside h2 {
     position: absolute;
 }
+
+main img {
+  width: 150px;
+  height: auto;
+}
+
+p { padding: 0;}
